@@ -12,9 +12,9 @@
     "transform": {
       ".*": "./node_modules/babel-jest"
     },
-		"moduleNameMapper" : {
-			"\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
-		}
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   },
   "keywords": [
     "React"
