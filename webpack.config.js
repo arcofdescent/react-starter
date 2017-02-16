@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path:     __dirname + '/www/builds',
     filename: 'bundle.js',
-		publicPath: "/assets/",
+		publicPath: "/builds/",
   },
 
   module: {
@@ -19,19 +19,11 @@ module.exports = {
       }, 
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass'],
+        loaders: ['style-loader', 'css-loader', 'sass-loader'],
         include: __dirname + '/src',
       },
     ],
   },
-
-	/*
-  resolve: {
-    alias: {
-      handlebars: __dirname + '/node_modules/handlebars/dist/handlebars.js', 
-    }, 
-  },
-	*/
 
   devtool: 'source-map',
 };
