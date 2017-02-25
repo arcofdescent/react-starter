@@ -5,13 +5,14 @@ import classes from './World.scss'
 class World extends Component {
 
 	render() {
-		const { value, onButtonClick } = this.props
+		const { value, increment, decrement } = this.props
 
 		return(
 			<div>
 				<h3>Hello {value}, welcome to my world!</h3>
-			{ /*<input type="text" placeholder="Enter your name" ref="input" />*/}
-				<button onClick={onButtonClick}>Submit</button>
+				<button onClick={increment}>+</button>
+				{' '}
+				<button onClick={decrement}>-</button>
 			</div>
 		)
 	}
@@ -19,7 +20,8 @@ class World extends Component {
 
 World.propTypes = {
 	value: PropTypes.number.isRequired,
-	onButtonClick: PropTypes.func.isRequired,
+	increment: PropTypes.func.isRequired,
+	decrement: PropTypes.func.isRequired,
 }
 
 export default World
