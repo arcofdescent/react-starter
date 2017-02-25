@@ -13,7 +13,7 @@ describe('World', () => {
 		);
 		let worldNode = ReactDOM.findDOMNode(world);
 
-		expect(worldNode.textContent).toMatch(/Hello World/);
+		expect(worldNode.textContent).toMatch(/Hello/);
 	});
 });
 
