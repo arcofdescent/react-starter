@@ -5,13 +5,13 @@ import classes from './styles/app.scss'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import World from './components/World/World'
-import counter from './reducers'
+import reducers from './reducers'
 
-const store = createStore(counter)
+const store = createStore(reducers)
 
 const render = () => ReactDOM.render(
 	<World 
-		value={store.getState()}
+		value={store.getState().val}
 		onButtonClick={() => store.dispatch({type: 'INC_COUNTER'})}
 	/>,
 	document.getElementById('root')
