@@ -1,18 +1,20 @@
 
-import { connect } from 'react-redux'
-import { updatePerson } from '../actions'
-import World from '../components/World/World'
+import React, { Component } from 'react'
+import Counter1 from '../components/Counter1/Counter1'
+import classes from '../styles/app.scss'
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		onButtonClick: (name) => dispatch(updatePerson(name))
+class App extends Component {
+
+	render() {
+		return(
+			<Counter1 
+				value={0}
+				increment={() => console.log('increment clicked')}
+				decrement={() => console.log('decrement clicked')}
+			/>
+		)
 	}
 }
 
-const App = connect(
-	mapDispatchToProps,
-)(World)
-
 export default App
-
 
