@@ -9,11 +9,17 @@ class Counter1 extends Component {
 
 		return(
 			<div className="counter1">
-				<h4>Component1 (not aware of redux)</h4>
-				<h5>Value is {val}</h5>
-				<button className="btn btn-default" onClick={increment}>+</button>
-				{' '}
-				<button className="btn btn-default" onClick={decrement}>-</button>
+				<div style={{borderBottom: '1px solid #aaa', paddingBottom: 5}}>
+					<h4>Component1</h4>
+					This a counter which increments/decrements the value by <b>1</b>. This is 
+					a <i>dumb</i> child component. It does not contain any redux related logic.
+				</div>
+				<div style={{textAlign: 'center'}}>
+					<h5>Value: {val}</h5>
+					<button className="btn btn-default" onClick={increment}>+</button>
+					{' '}
+					<button className="btn btn-default" onClick={decrement}>-</button>
+				</div>
 			</div>
 		)
 	}
