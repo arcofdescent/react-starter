@@ -1,10 +1,19 @@
 
 import { combineReducers } from 'redux'
-import reducer1 from './counter'
+import counter1 from './Counter1'
+import counter2 from './Counter2'
 
-const myApp = combineReducers({
-  reducer1,
+/* State tree
+ initialState = {
+ 	counter1: 0,
+	counter1: 0,
+ }
+
+ */
+const reducers = combineReducers({
+  counter1,
+	counter2
 })
 
-export default myApp
+export default reducers
 
