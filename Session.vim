@@ -295,8 +295,7 @@ setlocal nocopyindent
 setlocal cryptmethod=
 setlocal nocursorbind
 setlocal nocursorcolumn
-set cursorline
-setlocal cursorline
+setlocal nocursorline
 setlocal define=
 setlocal dictionary=
 setlocal nodiff
@@ -383,7 +382,7 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 25
-normal! 012|
+normal! 08|
 wincmd w
 argglobal
 edit src/components/Counter1/Counter1.js
@@ -514,12 +513,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 2 - ((1 * winheight(0) + 0) / 1)
+let s:l = 3 - ((2 * winheight(0) + 0) / 1)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-2
-normal! 0
+3
+normal! 033|
 wincmd w
 argglobal
 edit src/styles/app.scss
@@ -650,12 +649,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 15 - ((14 * winheight(0) + 0) / 1)
+let s:l = 9 - ((8 * winheight(0) + 0) / 1)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-15
-normal! 024|
+9
+normal! 011|
 wincmd w
 argglobal
 edit src/containers/App.js
@@ -704,7 +703,8 @@ setlocal nocopyindent
 setlocal cryptmethod=
 setlocal nocursorbind
 setlocal nocursorcolumn
-setlocal nocursorline
+set cursorline
+setlocal cursorline
 setlocal define=
 setlocal dictionary=
 setlocal nodiff
@@ -786,12 +786,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 24 - ((23 * winheight(0) + 25) / 50)
+let s:l = 27 - ((26 * winheight(0) + 25) / 50)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-24
-normal! 046|
+27
+normal! 040|
 wincmd w
 argglobal
 edit src/index.js
@@ -922,14 +922,14 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 10 - ((9 * winheight(0) + 0) / 1)
+let s:l = 7 - ((6 * winheight(0) + 0) / 1)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-10
-normal! 0
+7
+normal! 033|
 wincmd w
-2wincmd w
+5wincmd w
 exe '1resize ' . ((&lines * 1 + 28) / 57)
 exe 'vert 1resize ' . ((&columns * 103 + 103) / 207)
 exe '2resize ' . ((&lines * 50 + 28) / 57)
@@ -1089,12 +1089,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 18 - ((17 * winheight(0) + 26) / 52)
+let s:l = 6 - ((5 * winheight(0) + 26) / 52)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-18
-normal! 023|
+6
+normal! 08|
 wincmd w
 argglobal
 edit src/reducers/Counter2.js
@@ -1230,7 +1230,7 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 15
-normal! 05|
+normal! 016|
 wincmd w
 argglobal
 edit src/reducers/Counter1.js
@@ -1366,7 +1366,7 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 7
-normal! 012|
+normal! 016|
 wincmd w
 exe '1resize ' . ((&lines * 52 + 28) / 57)
 exe 'vert 1resize ' . ((&columns * 103 + 103) / 207)
