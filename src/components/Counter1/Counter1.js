@@ -5,12 +5,12 @@ import classes from './Counter1.scss'
 class Counter1 extends Component {
 
 	render() {
-		const { value, increment, decrement } = this.props
+		const { val, increment, decrement } = this.props
 
 		return(
 			<div className="counter1">
-				<h4>Component1</h4>
-				<h5>Value is {value}</h5>
+				<h4>Component1 (not aware of redux)</h4>
+				<h5>Value is {val}</h5>
 				<button className="btn btn-default" onClick={increment}>+</button>
 				{' '}
 				<button className="btn btn-default" onClick={decrement}>-</button>
@@ -20,7 +20,7 @@ class Counter1 extends Component {
 }
 
 Counter1.propTypes = {
-	value: PropTypes.number.isRequired,
+	val: PropTypes.number.isRequired,
 	increment: PropTypes.func.isRequired,
 	decrement: PropTypes.func.isRequired,
 }

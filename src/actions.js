@@ -1,9 +1,15 @@
 
-import { UPDATE_PERSON } from './actionTypes'
+//import { UPDATE_PERSON } from './actionTypes'
 
-export function updatePerson(name) {
+export function increment() {
 	return {
-		type: UPDATE_PERSON,
-		name
+		type: 'INC'
 	}
 }
+
+export function decrement() {
+	return {
+		type: 'DEC'
+	}
+}
+
