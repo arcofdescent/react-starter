@@ -33,10 +33,10 @@ Component specific style is in the related component's directory.
 I'm using webpack to bundle all this stuff.
 
 If you want to run this app:
-	* Download this repo (or clone it)
-	* cd into it
-	* npm install (assumin you already have node installed)
-	* npm run test (a very simple test)
-	* npm run start
-	* In your browser - http://localhost:8080
+  * Download this repo (or clone it)
+  * cd into it
+  * npm install (assumin you already have node installed)
+  * npm run test (a very simple test)
+  * npm run start
+  * In your browser - http://localhost:8080
 
