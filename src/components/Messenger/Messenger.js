@@ -1,14 +1,14 @@
 
 import React, { Component, PropTypes } from 'react'
-import classes from './Messager.scss'
+import classes from './Messenger.scss'
 
-class Messager extends Component {
+class Messenger extends Component {
 
 	render() {
 		const { increment } = this.props
 
 		return(
-			<div className="counter1">
+			<div className="messager">
 				<div style={{borderBottom: '1px solid #aaa', paddingBottom: 5}}>
 					<h4>Component3</h4>
 					This a component which sends messages to Component1. It demonstrates 
@@ -23,9 +23,9 @@ class Messager extends Component {
 	}
 }
 
-Messager.propTypes = {
+Messenger.propTypes = {
 	increment: PropTypes.func.isRequired,
 }
 
-export default Messager
+export default Messenger
 
