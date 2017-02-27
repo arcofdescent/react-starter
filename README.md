@@ -1,22 +1,42 @@
 
-**A simple starter kit for your React apps**
+**A simple starter kit for your Redux+React apps**
 
-```
-	$ git clone https://github.com/arcofdescent/react-starter
-	$ mv react-starter myapp
-	$ cd myapp
-	$ npm install (this takes time)
-```
+This repo can be used both as a starter kit for developing Redux+React apps as
+well as a helpful guide to those wishing to see some simple code (I hope) in
+action.
 
-To start development
+Here's a screenshot of the app
 
-	$ npm run start
+![app](https://dl.dropboxusercontent.com/u/30714030/redux-app.png)
 
-To build
+We use a very simple store containing two counters. The first counter
+increments/decrements by 1. The second counter increments/decrements by 2. We
+also have a Messager component which sends messages to the first counter.
 
-	$ npm run build
+In all there are three components all as children of the main App component.
 
-To test
+App is a container which is aware of Redux. The three child components below it
+are not. They act as *dumb* components which simply update their views based on
+change in state.
 
-	$ npm run test
+I also hope you understand and appreciate the organization of the source tree.
+
+![tree](https://dl.dropboxusercontent.com/u/30714030/tree.png)
+
+actions, components, containers, reducers go into their own directores. All
+styles use SASS. 
+
+Global style is defined in styles/app.scss
+
+Component specific style is in the related component's directory.
+
+I'm using webpack to bundle all this stuff.
+
+If you want to run this app:
+	* Download this repo (or clone it)
+	* cd into it
+	* npm install (assumin you already have node installed)
+	* npm run test (a very simple test)
+	* npm run start
+	* In your browser - http://localhost:8080
 
