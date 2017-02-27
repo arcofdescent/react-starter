@@ -11,7 +11,7 @@ Here's a screenshot of the app
 
 We use a very simple store containing two counters. The first counter
 increments/decrements by 1. The second counter increments/decrements by 2. We
-also have a Messager component which sends messages to the first counter.
+also have a Messenger component which sends messages to the first counter.
 
 In all there are three components all as children of the main App component.
 
@@ -35,7 +35,7 @@ I'm using webpack to bundle all this stuff.
 If you want to run this app:
   * Download this repo (or clone it)
   * cd into it
-  * npm install (assumin you already have node installed)
+  * npm install (assuming you already have node installed)
   * npm run test (a very simple test)
   * npm run start
   * In your browser - http://localhost:8080
